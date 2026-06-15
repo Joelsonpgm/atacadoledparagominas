@@ -1,0 +1,280 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atacado LED Paragominas | Distribuição Ourolux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #004a99; /* Azul Ourolux */
+            --accent: #ffcc00;  /* Amarelo Ourolux */
+            --white: #ffffff;
+            --bg: #f2f2f2;
+            --text: #333;
+            --whatsapp: #25d366;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        /* Banner de Cidades no Topo */
+        .top-bar {
+            background-color: var(--accent);
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            border-bottom: 2px solid #e6b800;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        header h1 { font-size: 24px; text-transform: uppercase; }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo dos Combos para Mobile */
+        .combo-card {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .combo-header {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* NOVA CLASSE PARA AS FOTOS DOS COMBOS */
+        .combo-imagem {
+            width: 100%;
+            height: 200px; /* Altura ideal para telas de celular */
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .combo-imagem img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Mantém a lâmpada na proporção correta, sem distorcer */
+            padding: 10px;
+        }
+
+        .combo-body {
+            padding: 20px;
+        }
+
+        .combo-body ul {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .combo-body ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price-box {
+            text-align: center;
+            background: #fff9e6;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .unit-price { color: #666; font-size: 14px; }
+        .total-price { 
+            font-size: 28px; 
+            color: #27ae60; 
+            font-weight: bold; 
+            display: block;
+        }
+
+        /* Botão de Compra no Card */
+        .btn-card {
+            display: block;
+            background: var(--whatsapp);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Info Logística */
+        .info-section {
+            background: #e1ecf7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Botão WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        /* Ajustes específicos para telas muito pequenas */
+        @media (max-width: 360px) {
+            header h1 { font-size: 20px; }
+            .total-price { font-size: 24px; }
+            .combo-imagem { height: 160px; } /* Reduz a foto em telas minúsculas */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        🚚 Atendemos com entrega agilizada em: Paragominas, Ulianópolis, Dom Eliseu, Ipixuna do Pará e região da BR-010.
+    </div>
+
+    <header>
+        <h1>Atacado LED Paragominas</h1>
+        <p>Distribuição Oficial Ourolux</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro">
+            <p><strong>Liderança em Iluminação no Pará.</strong><br>
+            Preço de fábrica para lojistas e revendedores.</p>
+        </div>
+
+        <!-- COMBO 01 MODIFICADO COM IMAGEM -->
+        <div class="combo-card">
+            <div class="combo-header">COMBO 01 (40 UNIDADES)</div>
+            
+            <div class="combo-imagem">
+                <!-- Caminho da imagem local para a Netlify ler -->
+                <img src="imagens/combo-01.jpg" alt="Lâmpadas LED Ourolux Altas Potências - Combo 01" loading="lazy">
+            </div>
+
+            <div class="combo-body">
+                <ul>
+                    <li><span>10x Lâmpadas 20W</span> ✅</li>
+                    <li><span>10x Lâmpadas 30W</span> ✅</li>
+                    <li><span>10x Lâmpadas 40W</span> ✅</li>
+                    <li><span>10x Lâmpadas 50W</span> ✅</li>
+
+                </ul>
+                <div class="price-box">
+                    <span class="unit-price">Saindo a R$ 9,59 cada</span>
+                    <span class="total-price">R$ 383,60</span>
+                </div>
+                <a href="https://wa.me/5591989573461?text=Olá,%20quero%20pedir%20o%20Combo%2001" class="btn-card">Pedir no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- COMBO 02 MODIFICADO COM IMAGEM -->
+        <div class="combo-card">
+            <div class="combo-header">COMBO 02 (35 UNIDADES)</div>
+            
+            <div class="combo-imagem">
+                <!-- Caminho da imagem local para a Netlify ler -->
+                <img src="imagens/combo-02.jpg" alt="Lâmpadas LED Ourolux Altas Potências - Combo 02" loading="lazy">
+            </div>
+
+            <div class="combo-body">
+                <ul>
+                    <li><span>10x Lâmpadas 20W</span> ✅</li>
+                    <li><span>10x Lâmpadas 30W</span> ✅</li>
+                    <li><span>10x Lâmpadas 40W</span> ✅</li>
+                    <li><span>05x Lâmpadas 50W</span> ✅</li>
+                </ul>
+                <div class="price-box">
+                    <span class="unit-price">Saindo a R$ 10,20 cada</span>
+                    <span class="total-price">R$ 357,00</span>
+                </div>
+                <a href="https://wa.me/5591989573461?text=Olá,%20quero%20pedir%20o%20Combo%2002" class="btn-card">Pedir no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <p>📍 <strong>Localização:</strong> Paragominas - PA</p>
+            <p>📧 <strong>E-mail:</strong> joelsonvendas1973@gmail.com</p>
+            <p>💳 <strong>CNPJ:</strong> 30.599.073/0001-02</p>
+            <p>🚚 <strong>Logística:</strong> Pronta entrega e retirada em mãos na região.</p>
+        </div>
+
+    </div>
+
+    <a href="https://wa.me/5591989573461" class="whatsapp-float" target="_blank">
+        <svg width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.601 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 atacadoledparagominas.com<br>
+        Representante: Joelson Silva | CNPJ: 30.599.073/0001-02</p>
+    </footer>
+
+</body>
+</html>
